@@ -1,0 +1,42 @@
+/* Estilos globais: apenas variáveis, reset e tipografia.
+   Todo o resto usa CSS Modules (arquivos *.module.css). */
+:root {
+  --bg: #000;
+  --text: #f5f5fa;
+  --muted: #a9a9c2;
+  --blue: #2b3cff;
+  --violet: #8a3dff;
+  --magenta: #ff2d8a;
+  --orange: #ff5a36;
+  --cyan: #29b6ff;
+  --glass: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --gradient: linear-gradient(120deg, var(--blue), var(--magenta) 55%, var(--orange));
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; letter-spacing: -0.02em; }
+
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+button { font: inherit; color: inherit; cursor: pointer; }
+
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

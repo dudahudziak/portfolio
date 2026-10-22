@@ -1,0 +1,8 @@
+.card { height: 100%; display: flex; flex-direction: column; overflow: hidden; border-radius: 1.5rem; background: var(--glass); border: 1px solid var(--glass-border); backdrop-filter: blur(14px); transition: transform 0.25s, border-color 0.25s; }
+.card:hover { transform: translateY(-4px); border-color: rgba(255, 255, 255, 0.3); }
+.body { display: flex; flex-direction: column; gap: 0.8rem; padding: 1.3rem; flex: 1; }
+.body p { color: #d3d3e6; }
+.actions { display: flex; align-items: center; gap: 1.2rem; margin-top: auto; padding-top: 0.5rem; }
+.actions a { text-underline-offset: 4px; }
+.detail { padding: 0.5rem 1.1rem; border-radius: 999px; border: 1px solid var(--glass-border); background: transparent; }
+.detail:hover { background: var(--gradient); border-color: transparent; }

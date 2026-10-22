@@ -1,0 +1,7 @@
+.groups { display: grid; gap: 2rem; }
+.group { display: grid; grid-template-columns: 200px 1fr; gap: 1rem; align-items: start; }
+.group h3 { font-size: 1.2rem; color: var(--muted); padding-top: 0.5rem; }
+.group ul { display: flex; flex-wrap: wrap; gap: 0.6rem; list-style: none; padding: 0; }
+.group li { padding: 0.55rem 1.2rem; border-radius: 999px; background: var(--glass); border: 1px solid var(--glass-border); backdrop-filter: blur(10px); transition: background 0.2s, transform 0.2s; }
+.group li:hover { background: var(--gradient); border-color: transparent; transform: translateY(-2px); }
+@media (max-width: 700px) { .group { grid-template-columns: 1fr; } }

@@ -1,0 +1,2 @@
+.img, .fallback { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.fallback { display: grid; place-items: center; padding: 1rem; text-align: center; font: 700 1.2rem var(--font-display); background: var(--gradient); }

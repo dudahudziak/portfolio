@@ -1,0 +1,17 @@
+.grid { display: grid; grid-template-columns: 320px 1fr; gap: 3rem; align-items: center; }
+.photoWrap { aspect-ratio: 4 / 5; overflow: hidden; border: 1px solid var(--glass-border); animation: morph 14s ease-in-out infinite; }
+.photo, .fallback { width: 100%; height: 100%; object-fit: cover; }
+.photo { object-position: center top;}
+.fallback { display: grid; place-items: center; font: 800 5rem var(--font-display); background: var(--gradient); }
+.text { display: grid; gap: 1.1rem; font-size: 1.1rem; color: #dcdcec; max-width: 40rem; }
+.info { display: grid; gap: 0.6rem; margin-top: 0.8rem; padding: 1.2rem 1.4rem; border-radius: 1.2rem; background: var(--glass); border: 1px solid var(--glass-border); backdrop-filter: blur(12px); }
+.info div { display: flex; gap: 1rem; flex-wrap: wrap; }
+.info dt { min-width: 5rem; color: var(--muted); }
+.info a { text-underline-offset: 3px; }
+
+@keyframes morph {
+  0%, 100% { border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%; }
+  50% { border-radius: 42% 58% 40% 60% / 58% 42% 58% 42%; }
+}
+@media (max-width: 760px) { .grid { grid-template-columns: 1fr; } .photoWrap { max-width: 280px; } }
+@media (prefers-reduced-motion: reduce) { .photoWrap { animation: none; border-radius: 2rem; } }
