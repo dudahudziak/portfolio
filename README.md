@@ -15,7 +15,7 @@ Portfólio pessoal feito com **React + Vite** e **CSS Modules**, com fundo preto
 ## Como rodar localmente
 ```bash
 git clone https://github.com/dudahudziak/portfolio.git
-cd seu-repositorio
+cd portfolio
 npm install
 npm run dev      # abre em http://localhost:5173
 ```
