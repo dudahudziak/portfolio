@@ -4,9 +4,10 @@
 .photo { object-position: center top;}
 .fallback { display: grid; place-items: center; font: 800 5rem var(--font-display); background: var(--gradient); }
 .text { display: grid; gap: 1.1rem; font-size: 1.1rem; color: #dcdcec; max-width: 40rem; }
-.info { display: grid; gap: 0.6rem; margin-top: 0.8rem; padding: 1.2rem 1.4rem; border-radius: 1.2rem; background: var(--glass); border: 1px solid var(--glass-border); backdrop-filter: blur(12px); }
-.info div { display: flex; gap: 1rem; flex-wrap: wrap; }
-.info dt { min-width: 5rem; color: var(--muted); }
+.info { display: flex; flex-wrap: wrap; gap: 1.2rem 3rem; margin-top: 0.8rem; padding: 1.2rem 1.4rem; border-radius: 1.2rem; background: var(--glass); border: 1px solid var(--glass-border); backdrop-filter: blur(12px); }
+.info div { display: flex; flex-direction: column; gap: 0.15rem; }
+.info dt { min-width: 0; font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.info dd { min-width: 0; overflow-wrap: anywhere; }
 .info a { text-underline-offset: 3px; }
 
 @keyframes morph {
