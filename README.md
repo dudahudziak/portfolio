@@ -2,7 +2,8 @@
 
 Portfólio pessoal feito com **React + Vite** e **CSS Modules**, com fundo preto e formas fluidas animadas.
 
-**Versão online:** [(https://portfolio-six-indol-84.vercel.app/)]
+**Versão online:** 
+[https://portfolio-six-indol-84.vercel.app/]
 
 ## Seções
 - **Início:** resumo profissional
