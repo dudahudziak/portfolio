@@ -7,7 +7,7 @@ export const profile = {
   location: 'Serra Negra, SP',
   email: 'vitoriahudziak@outlook.com',
   about: [
-    'Prazer, Eduarda! Sou paranaense, tenho 23 anos e desenvolvedora Front-End (futura desenvolvedora Full Stack Phyton). Descobri a programação trabalhando como designer e assistente de marketing e me apaixonei pela área.',
+    'Prazer, Eduarda! Sou paranaense, tenho 23 anos e sou desenvolvedora Front-End (futura desenvolvedora Full Stack Phyton). Descobri a programação trabalhando como designer e assistente de marketing e me apaixonei pela área.',
   'No curso da EBAC, aprendi a construir interfaces completas, desde HTML, CSS e JavaScript até React, Next.js e TypeScript. Também estudei design responsivo (Sass, Bootstrap e Tailwind), testes unitários e de integração, qualidade de código, PWAs, performance, micro frontends, cloud e DevOps, sempre trabalhando com Git. Estou buscando uma vaga junior, para que eu possa desenvolver meus conhecimentos e construir uma carreira sólida.',
   ],
   formspreeId: 'xoejgron',
