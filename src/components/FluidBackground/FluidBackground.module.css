@@ -14,11 +14,9 @@
   filter: blur(6px) saturate(1.15);
   box-shadow: 0 0 120px 10px rgba(120, 60, 255, 0.35);
   will-change: transform, border-radius;
-  /* o deslocamento do mouse fica em translate; o movimento próprio, em animation */
   translate: calc(var(--px) * var(--depth, 40) * 1px) calc(var(--py) * var(--depth, 40) * 1px);
 }
 
-/* Grande, azul → magenta → laranja (canto superior esquerdo) */
 .a {
   --depth: 60;
   width: 30vmax;
@@ -30,7 +28,6 @@
   animation: morphA 22s ease-in-out infinite, driftA 30s ease-in-out infinite;
 }
 
-/* Grande, ciano → magenta → laranja (canto inferior direito) */
 .c {
   --depth: 80;
   width: 20vmax;
@@ -76,8 +73,11 @@
 }
 
 @media (max-width: 700px) {
-  .a { width: 90vmax; height: 70vmax; }
-  .c { width: 90vmax; height: 64vmax; }
+  .blob { box-shadow: 0 0 50px 0 rgba(120, 60, 255, 0.25); }
+
+  .a { width: 80vw; height: 58vw; top: -20vw; left: -32vw; }
+  .c { width: 80vw; height: 58vw; bottom: -22vw; right: -36vw; }
+  .shade { background: rgba(0, 0, 0, 0.55); }
 }
 
 @media (prefers-reduced-motion: reduce) {
